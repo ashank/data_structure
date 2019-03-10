@@ -10,7 +10,7 @@
 
 
 /**
- 分块索引算法
+ 分块索引算法，索引表采用顺序查找法
 
  @param MainIndex 主表，保存了所有的子表的数值
  @param IndexList 索引表，保存所有子表的关键字、在主表中的起始位置、长度、最大关键字
@@ -54,7 +54,7 @@ int Index::Blocksch(int MainIndex[], IndexItem IndexList[],int m, int key){
 
 
 /**
- 分块索引算法
+ 分块索引算法，索引表采用二分查找法
  
  @param MainIndex 主表，保存了所有的子表的数值
  @param IndexList 索引表，保存所有子表的关键字、在主表中的起始位置、长度、最大关键字
