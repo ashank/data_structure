@@ -9,6 +9,9 @@
 #include "IndexSearch.hpp"
 
 
+const int DEFAULT = -1;
+
+
 /**
  分块索引算法，索引表采用顺序查找法
 
@@ -34,7 +37,7 @@ int Index::Blocksch(int MainIndex[], IndexItem IndexList[],int m, int key){
     }
     
     //如果是key大于所有的最大关键字中的任何一个，说明它不属于这个表中
-    if (startPosition == endPosition == -1) {
+    if (startPosition == endPosition == DEFAULT) {
         return -1;
     }
     
@@ -93,7 +96,7 @@ int Index::Blocksch2(int MainIndex[], IndexItem IndexList[],int m, int key){
     
     
     //如果是key大于所有的最大关键字中的任何一个，说明它不属于这个表中
-    if (startPosition == endPosition == -1) {
+    if (startPosition == endPosition == DEFAULT) {
         return -1;
     }
     
