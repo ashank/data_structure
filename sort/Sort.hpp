@@ -21,11 +21,10 @@ public:
     
     void SelectSort(int Data[],int length);
     
+    void HeapSort(int Data[],int length);
+    
     void BubbleSort(int Data[],int length);
-    
-    
-    
-    
+    void QuickSort(int Data[],int length);
     
     void print(int Data[],int length,int i);
     

@@ -16,6 +16,11 @@ int main(int argc, const char * argv[]) {
     
     Sort sort;
     
+    
+    
+    int Data3[] = {304,2,100,56,809,405,4,21};
+    sort.BubbleSort(Data3, 8);
+    
     int Data[] = {34,22,1,56,89,45,33,21};
     sort.InsertSort(Data,8);
     
